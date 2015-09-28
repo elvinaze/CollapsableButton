@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollapsableButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHc-GC-g8U">
+                                <rect key="frame" x="20" y="60" width="560" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emk-3I-T6m" customClass="CollapsableButton" customModule="CollapsableButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="60"/>
+                                        <color key="backgroundColor" red="0.1159958702" green="0.70559269160000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Validate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="collapsedImage" value="icon_close_"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="collapsedBackgrounColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onValidationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R51-ew-DpY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="emk-3I-T6m" firstAttribute="centerY" secondItem="sHc-GC-g8U" secondAttribute="centerY" id="5dj-AD-boV"/>
+                                    <constraint firstItem="emk-3I-T6m" firstAttribute="width" secondItem="sHc-GC-g8U" secondAttribute="width" priority="750" id="EVC-q3-0lL"/>
+                                    <constraint firstItem="emk-3I-T6m" firstAttribute="centerX" secondItem="sHc-GC-g8U" secondAttribute="centerX" id="ZaX-Jg-klo"/>
+                                    <constraint firstAttribute="height" constant="60" id="cEI-6s-F6Q"/>
+                                    <constraint firstItem="emk-3I-T6m" firstAttribute="height" secondItem="sHc-GC-g8U" secondAttribute="height" priority="750" id="dmd-5g-x0l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sHc-GC-g8U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Aq9-Xe-Atb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sHc-GC-g8U" secondAttribute="leading" id="KTa-qo-Vj9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sHc-GC-g8U" secondAttribute="trailing" id="roG-F1-qfD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="validationButton" destination="emk-3I-T6m" id="vmC-Gp-kqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="549"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_close_" width="18" height="18"/>
+    </resources>
+</document>
