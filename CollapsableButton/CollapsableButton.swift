@@ -60,6 +60,12 @@ public class CollapsableButton: UIButton
         self.layer.masksToBounds = true
         self.createRatioContraint()
     }
+    
+    public init() {
+        super.init(frame:CGRectZero)
+        self.layer.masksToBounds = true
+        self.createRatioContraint()
+    }
 }
 
 //MARK:- Public Methods
