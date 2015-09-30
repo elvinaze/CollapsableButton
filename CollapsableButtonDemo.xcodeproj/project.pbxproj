@@ -740,6 +740,7 @@
 				35585ACE1BB8DF34001EE8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35585ACF1BB8DF34001EE8CA /* Build configuration list for PBXNativeTarget "CollapsableButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +749,7 @@
 				35585AD11BB8DF34001EE8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35585AD21BB8DF34001EE8CA /* Build configuration list for PBXNativeTarget "CollapsableButtonDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +758,7 @@
 				35585AD41BB8DF34001EE8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35585AF11BB8DF46001EE8CA /* Build configuration list for PBXNativeTarget "CollapsableButton" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +767,7 @@
 				35585AF31BB8DF46001EE8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35585AF51BB8DF46001EE8CA /* Build configuration list for PBXNativeTarget "CollapsableButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -772,6 +776,7 @@
 				35585AF71BB8DF46001EE8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

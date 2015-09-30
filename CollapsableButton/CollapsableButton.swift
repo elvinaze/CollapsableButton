@@ -28,14 +28,14 @@ public class CollapsableButton: UIButton
             self.layer.cornerRadius = cornerRadius
         }
     }
-    @IBInspectable var animDuration: Double = 0.5
-    @IBInspectable var collapsedTitle: String? = nil
-    @IBInspectable var collapsedImage: UIImage? = nil
-    @IBInspectable var collapsedBackgrounColor: UIColor? = nil
+    @IBInspectable public var animDuration: Double = 0.5
+    @IBInspectable public var collapsedTitle: String? = nil
+    @IBInspectable public var collapsedImage: UIImage? = nil
+    @IBInspectable public var collapsedBackgrounColor: UIColor? = nil
     // Value for the Aspect Ratio constraint when the Button is collapsed (in circle form)
-    @IBInspectable var highConstraintPriority:Float = 800
+    @IBInspectable public var highConstraintPriority:Float = 800
     // Value for the Aspect Ratio constraint when the Button is expanded (in rectangular form)
-    @IBInspectable var lowConstraintPriority:Float = 200
+    @IBInspectable public var lowConstraintPriority:Float = 200
     
 
     //MARK: - Private Variables
